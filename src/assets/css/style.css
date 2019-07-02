@@ -1,0 +1,95 @@
+/*
+Template Name: Banco Accenture
+Author: Diego Alejandro Agudelo Lugo
+Email: daagudelol@gmail.com
+File: scss
+*/
+/**
+ * Table Of Content
+ *
+ * 	1. variables
+ *	2. pages
+ *	3. Menu
+ *	4. Footer
+ *	5. responsive
+ *	6.
+ *	7.
+ *	8.
+ */
+/*
+Template Name: Banco Accenture
+Author: Diego Alejandro Agudelo Lugo
+Email: daagudelol@gmail.com
+File: scss
+*/
+/*============================================================== 
+ For all pages 
+ ============================================================== */
+/*
+Template Name: Banco Accenture
+Author: Diego Alejandro Agudelo Lugo
+Email: daagudelol@gmail.com
+File: scss
+*/
+.footer-top {
+  background: #181818;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+  .footer-top [class*=col-md]:nth-child(2) {
+    border-left: 1px solid rgba(255, 255, 255, 0.06);
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+    text-align: center; }
+  .footer-top [class*=col-md]:nth-child(3) {
+    text-align: right; }
+  .footer-top .contact-container {
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+  .footer-top .footer-top {
+    padding: 46.5px 0; }
+    .footer-top .footer-top p {
+      display: inline-block;
+      margin: 0;
+      position: relative;
+      padding-left: 40px;
+      font-size: 15px;
+      color: #707070; }
+      .footer-top .footer-top p span {
+        color: #fff; }
+      .footer-top .footer-top p i {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        color: #F6B833;
+        font-size: 25px; }
+
+.footer-bottom {
+  background: #181818;
+  padding: 36px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06); }
+  .footer-bottom .copy-text p {
+    margin: 0;
+    color: #707070;
+    font-size: 15px; }
+  .footer-bottom .contact-container {
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+  .footer-bottom .social a {
+    color: #707070;
+    font-size: 18px;
+    transition: all .4s ease; }
+    .footer-bottom .social a + a {
+      margin-left: 30px; }
+    .footer-bottom .social a:hover {
+      color: #F6B833; }
+
+/*# sourceMappingURL=style.css.map */
