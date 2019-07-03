@@ -5,7 +5,7 @@ import { URL_SERVICES } from '../../config/config';
 import { Observable } from 'rxjs';
 
 import { map, catchError, timeout, switchAll } from 'rxjs/operators';
-import * as swal from 'sweetalert';
+import  swal from 'sweetalert';
 
 import 'rxjs/add/operator/map'
 
@@ -24,7 +24,7 @@ export class UsuarioService {
 
     return this.http.post(url, usuario)
     .pipe(map( (resp:any)=>{
-        swal('Usuario creado', usuario.nombre, 'success');
+      swal('Usuario creado', usuario.nombre, 'success');
         return resp.usuario;
       }));
 
