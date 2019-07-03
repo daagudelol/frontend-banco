@@ -1,30 +1,36 @@
 <form ngNativeValidate [formGroup]="forma" (ngSubmit)="registrarUsuario()">
-    <div class="form-group">
-        <label for="inputId">Identificación</label>
-        <input type="number" formControlName="identification" name="identification" class="form-control" id="inputId" aria-describedby="idHelp" placeholder="Ingrese su número de cédula" required>
-        <small id="idHelp" class="form-text text-muted">El valor debe ser númerico</small>
-    </div>
-    <div class="form-group">
-        <label for="inputNombre">Nombre completo</label>
-        <input type="text" formControlName="name" name="name" class="form-control" id="inputNombre" placeholder="Ingrese sus nombres y apellidos" required>
-    </div>
-
-    <div class="form-group col-md-6 pl-0">
-        <label for="dateAge">Fecha de nacimiento</label>
-        <div class='input-group date' id='dateAge'>
-            <input class="form-control" formControlName="dateN" name="dateN" placeholder="yyyy-mm-dd" (navigate)="date = $event.next" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" required>
-
-            <div class="input-group-append">
-                <button class="btn btn-outline-primary calendar" (click)="d.toggle()" type="button"><i class="far fa-calendar"></i></button>
-            </div>
+    <div class="row">
+        <div class="form-group col-md-4 col-12 ">
+            <label for="inputId">Identificación</label>
+            <input type="number" formControlName="identification" name="identification" class="form-control" id="inputId" aria-describedby="idHelp" placeholder="Ingrese su número de cédula" required>
+            <small id="idHelp" class="form-text text-muted">El valor debe ser númerico</small>
         </div>
-        <small class="form-text text-muted">Recuerde que debe ser mayor de edad para registrarse</small>
-        <!-- <small class="form-text text-danger" *ngIf="forma.errors?.esMayor && !forma.dirty">Debe ser mayor de edad para registrarse</small> -->
-    </div>
+        <div class="form-group col-md-4 col-12">
+            <label for="inputNombre">Nombre completo</label>
+            <input type="text" formControlName="name" name="name" class="form-control" id="inputNombre" placeholder="Ingrese sus nombres y apellidos" required>
+        </div>
 
+        <div class="form-group col-md-4 col-12">
+            <label for="dateAge">Fecha de nacimiento</label>
+            <div class='input-group date' id='dateAge'>
+                <input class="form-control" formControlName="dateN" name="dateN" placeholder="yyyy-mm-dd" (navigate)="date = $event.next" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" required>
+
+                <div class="input-group-append">
+                    <button class="btn btn-dark calendar" (click)="d.toggle()" type="button"><i class="far fa-calendar"></i></button>
+                </div>
+            </div>
+            <small class="form-text text-muted">Recuerde que debe ser mayor de edad para registrarse</small>
+            <!-- <small class="form-text text-danger" *ngIf="forma.errors?.esMayor && !forma.dirty">Debe ser mayor de edad para registrarse</small> -->
+        </div>
+    </div>
     <!-- <pre>{{ anio }}</pre> -->
 
 
+    <div class="row justify-content-center">
+        <div class="col-md-3 col-12 ">
+            <button type="submit" class="btn btn-dark btn-block">Enviar</button>
+        </div>
 
-    <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+
 </form>

@@ -22,18 +22,44 @@ Author: Diego Alejandro Agudelo Lugo
 Email: daagudelol@gmail.com
 File: scss
 */
-/*============================================================== 
- For all pages 
+/*==============================================================
+ For all pages
  ============================================================== */
+main .btn {
+  border-radius: 0 !important; }
+
+.register {
+  background: #71d488;
+  padding: 30px 0; }
+  .register .form-control {
+    background-color: transparent !important;
+    border: 1px solid #212529 !important; }
+
+.solicitud h2 {
+  font-size: 38px; }
+
+.carousel {
+  border-bottom: 4px solid #71d488; }
+  .carousel .carousel-caption {
+    bottom: 33% !important; }
+    .carousel .carousel-caption h3 {
+      font-size: 60px; }
+
 /*
 Template Name: Banco Accenture
 Author: Diego Alejandro Agudelo Lugo
 Email: daagudelol@gmail.com
 File: scss
 */
+menu.bg-dark {
+  background-color: rgba(52, 58, 64, 0.61) !important; }
+
 .footer-top {
   background: #181818;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+  @media (max-width: 414px) {
+    .footer-top {
+      text-align: center; } }
   .footer-top [class*=col-md]:nth-child(2) {
     border-left: 1px solid rgba(255, 255, 255, 0.06);
     border-right: 1px solid rgba(255, 255, 255, 0.06);
@@ -64,7 +90,7 @@ File: scss
         top: 50%;
         left: 0;
         transform: translateY(-50%);
-        color: #F6B833;
+        color: #07d9ff;
         font-size: 25px; }
 
 .footer-bottom {
@@ -91,5 +117,11 @@ File: scss
       margin-left: 30px; }
     .footer-bottom .social a:hover {
       color: #F6B833; }
+
+.navbar {
+  background: rgba(0, 0, 0, 0.85); }
+  .navbar .navbar-brand {
+    font-size: 30px;
+    font-family: 'Titillium Web', sans-serif; }
 
 /*# sourceMappingURL=style.css.map */

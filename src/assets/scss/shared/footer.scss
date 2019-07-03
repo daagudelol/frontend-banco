@@ -1,6 +1,9 @@
 .footer-top {
     background: #181818;
     border-bottom: 1px solid rgba(#fff, 0.06);
+    @media (max-width: 414px) {
+        text-align: center;
+    }
     [class*=col-md]:nth-child(2) {
         border-left: 1px solid rgba(#fff, 0.06);
         border-right: 1px solid rgba(#fff, 0.06);
@@ -35,7 +38,7 @@
                 top: 50%;
                 left: 0;
                 transform: translateY(-50%);
-                color: #F6B833;
+                color: #07d9ff;
                 font-size: 25px;
             }
         }

@@ -7,6 +7,37 @@ File: scss
 
 @import '../variable';
 
-/*============================================================== 
- For all pages 
+/*==============================================================
+ For all pages
  ============================================================== */
+
+main {
+    .btn {
+        border-radius: 0 !important;
+    }
+}
+
+.register {
+    background: #71d488;
+    padding: 30px 0;
+    & .form-control {
+        background-color: transparent !important;
+        border: 1px solid #212529 !important;
+    }
+}
+
+.solicitud {
+    h2 {
+        font-size: 38px;
+    }
+}
+
+.carousel {
+    border-bottom: 4px solid #71d488;
+    & .carousel-caption {
+        bottom: 33% !important;
+        h3 {
+            font-size: 60px;
+        }
+    }
+}
